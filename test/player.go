@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/yy/timewheel"
+	"github.com/yyhero/timewheel"
 	"time"
 )
 
