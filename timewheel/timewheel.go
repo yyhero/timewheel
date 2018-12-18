@@ -52,7 +52,7 @@ func New(interval time.Duration, slotNum int) *TimeWheel {
 		stopChannel: make(chan bool),
 	}
 
-	// 初始化槽，每个槽指向一个双向链表
+	// 初始化槽，每个槽指向一个链表
 	for i := 0; i < obj.slotNum; i++ {
 		obj.slots[i] = list.New()
 	}
